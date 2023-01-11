@@ -1,0 +1,76 @@
+File f=new File('C:\\Users\\00793\\Documents\\ProcesosBPMN\\Prospectos\\prospectos.txt')
+String eol="\n"
+
+f.append("["+eol)
+
+for (objKey in prospectos) {
+		String nombre= objKey.nombre
+		String apellidos= objKey.apellidos
+		List<String> telefono = objKey.telefono
+		String rol = objKey.rol
+		String empresa = objKey.empresa
+		String url= objKey.urlLinkedin
+		String direccion = objKey.direccion
+		String nit =  objKey.nitEmpresa
+		String notas = objKey.notas
+		List<String> correos = objKey.correo
+		
+		f.append("{"+eol)
+		f.append("\"nombrenombre\": "+"\""+nombre+"\""+","+eol)
+		f.append("\"apellidos\": "+"\""+apellidos+"\""+","+eol)
+		f.append("\"rol\": "+"\""+rol+"\""+","+eol)
+		f.append("\"empresa\": "+"\""+empresa+"\""+","+eol)
+		f.append("\"urlLinkedin\": "+"\""+url+"\""+","+eol)
+		f.append("\"direccion\": "+"\""+direccion+"\""+","+eol)
+		f.append("\"nit\": "+"\""+nit+"\""+","+eol)
+		f.append("\"notas\": "+"\""+notas+"\""+","+eol)
+		f.append("\"telefonos\": "+"{"+eol)
+		
+		
+		for (telKey in telefono) {
+				
+			if(!telefono.last().equals(telKey)){
+				f.append("\""+telKey+"\""+","+eol)
+			}else{
+				f.append("\""+telKey+"\""+eol)
+			}
+		 }
+		 f.append("},"+eol)
+		 
+		 f.append("\"correos\": "+"{"+eol)
+		 
+		
+		
+
+		 for (corKey in correos) {
+			 
+		 if(!correos.last().equals(corKey)){
+			 f.append("\""+corKey+"\""+","+eol)
+		 }else{
+			 f.append("\""+corKey+"\""+eol)
+		 }
+		}
+		   f.append("}"+eol)
+
+		 
+		 
+
+		   
+		   if(prospectos.last() != objKey){
+			   f.append("},"+eol)
+		   }else{
+			   f.append("}"+eol)
+			   
+		   }
+
+		
+		
+		
+		
+		
+				   
+		}
+
+
+f.append("]"+eol)
+		

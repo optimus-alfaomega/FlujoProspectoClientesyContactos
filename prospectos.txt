@@ -1,0 +1,60 @@
+[
+{
+"nombrenombre": "Alexander",
+"apellidos": "Reyes",
+"rol": "",
+"empresa": "",
+"urlLinkedin": "",
+"direccion": "Carrera 118 #83a-59",
+"nit": "",
+"notas": ""
+"telefonos": {
+},
+"correos": {
+}
+},
+{
+"nombrenombre": "maria",
+"apellidos": "lopez",
+"rol": "",
+"empresa": "",
+"urlLinkedin": "",
+"direccion": "",
+"nit": "",
+"notas": ""
+"telefonos": {
+},
+"correos": {
+}
+}
+]
+[
+{
+"nombrenombre": "Alexander",
+"apellidos": "Reyes",
+"rol": "",
+"empresa": "",
+"urlLinkedin": "",
+"direccion": "Carrera 118 #83a-59",
+"nit": "",
+"notas": "",
+"telefonos": {
+},
+"correos": {
+}
+},
+{
+"nombrenombre": "casa",
+"apellidos": "perro",
+"rol": "",
+"empresa": "",
+"urlLinkedin": "",
+"direccion": "",
+"nit": "",
+"notas": "",
+"telefonos": {
+},
+"correos": {
+}
+}
+]
